@@ -1,5 +1,5 @@
 FROM debian:bullseye AS base
-LABEL maintainer razvan@opensips.org
+LABEL maintainer darius.stefan@opensips.org
 
 RUN mkdir -p /var/run/freeswitch && mkdir -p /var/lib/freeswitch && mkdir -p /var/log/freeswitch &&\
     groupadd -r freeswitch --gid=999 && useradd -r -g freeswitch --uid=999 freeswitch
